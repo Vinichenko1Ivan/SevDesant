@@ -943,12 +943,12 @@ header * {
 }
 @media (max-width: 768px) {
     .content-block__general-block_smi {
-        margin: 0px auto 0px;
+        margin: 80px auto 0px;
     }
 }
 @media (max-width: 425px) {
     .content-block__general-block_smi {
-        margin: 0px auto 0px;
+        margin: 60px auto 0px;
     }
 }
 
