@@ -542,7 +542,7 @@ header * {
 }
 @media (max-width: 320px) {
     .slider-area {
-        margin: 16px auto 20px;
+        margin: 12px auto 20px;
     }
 }
 
