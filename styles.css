@@ -35,7 +35,6 @@ a:hover {
 }
 body * {
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 
@@ -517,6 +516,7 @@ header * {
     max-width: 1440px;
     height: 550px;
     margin: 145px auto 0px;
+    overflow-x: hidden;
 }
 @media (max-width: 1024px) {
     .slider-area {
