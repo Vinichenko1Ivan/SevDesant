@@ -9,9 +9,6 @@ button {
     cursor: pointer;
     transition: all ease 0.5s;
 }
-button:hover {
-    background-color: darkolivegreen;
-}
 
 a {
     text-decoration: none;
@@ -70,19 +67,38 @@ header * {
     position: fixed;
     z-index: 150;
     width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 15px 50px;
     background-color: azure;     /*aquamarine*/
 }
 @media (max-width: 1024px) {
     .header__wrapper {
+        max-width: 1024px;
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 768px) {
+    .header__wrapper {
+        max-width: 768px;
         padding: 15px 20px;
     }
 }
 @media (max-width: 425px) {
     .header__wrapper {
+        max-width: 425px;
         height: 80px;
         padding: 10px 15px;
+    }
+}
+@media (max-width: 375px) {
+    .header__wrapper {
+        max-width: 375px;
+    }
+}
+@media (max-width: 320px) {
+    .header__wrapper {
+        max-width: 320px;
     }
 }
 
@@ -102,17 +118,33 @@ header * {
         padding: 0px 50px;
     }
 }
+@media (max-width: 1024px) {
+    .header__container {
+        max-width: 1024px;
+    }
+}
 @media (max-width: 768px) {
     .header__container {
+        max-width: 768px;
         height: 80px;
     }
 }
 @media (max-width: 425px) {
     .header__container {
+        max-width: 425px;
         height: 50px;
     }
 }
-
+@media (max-width: 375px) {
+    .header__container {
+        max-width: 375px;
+    }
+}
+@media (max-width: 320px) {
+    .header__container {
+        max-width: 320px;
+    }
+}
 .header__logo__container {
     display: flex;
     flex: 1 1 auto;                /*?*/
@@ -279,10 +311,10 @@ header * {
         justify-content: right;
         width: 25%;
         height: 20%;
-        position: fixed;
+        /*position: fixed;
         top: 0;
-        right: 0;
-        z-index: 150;
+        right: 0;*/
+        z-index: 200;
     }
 }
 
@@ -471,30 +503,66 @@ header * {
     padding: 15px;
 }
 
-
+/***************************************************slider*******************************************************************/
 
 .slider-area {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1 1 auto;
     position: absolute;
     z-index: 10;
     width: 100%;
     max-width: 1440px;
-    height: 350px;
-    margin: 150px auto 0px;
-    background-color: rgb(215, 215, 124);
+    height: 550px;
+    margin: 145px auto 0px;
+}
+@media (max-width: 1024px) {
+    .slider-area {
+        margin: 70px auto 0px;
+    }
 }
 @media (max-width: 768px) {
     .slider-area {
-        height: 250px;
-        margin: 150px auto 20px;
+        height: 350px;
+        margin: 81px auto 20px;
     }
 }
 @media (max-width: 425px) {
     .slider-area {
         height: 250px;
-        margin: 110px auto 20px;
+        margin: 36px auto 20px;
     }
+}
+@media (max-width: 375px) {
+    .slider-area {
+        margin: 26px auto 20px;
+    }
+}
+@media (max-width: 320px) {
+    .slider-area {
+        margin: 16px auto 20px;
+    }
+}
+
+.slider-area__container {
+    display: flex;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: linear 0.8s;
+}
+
+.slider-area__container img {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    max-height: 550px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .prev-button {
@@ -507,9 +575,9 @@ header * {
     background: transparent;
 }
 
-.prev-button:hover {
+/*.prev-button:hover {
     background-color: rgb(51, 190, 144);
-}
+}*/
 
 .prev-button_arrow-left,
 .next-button_arrow-right {
@@ -529,7 +597,7 @@ header * {
 
 .prev-button_arrow-left path,
 .next-button_arrow-right path {
-    fill: rgb(48, 106, 87);
+    /*fill: rgb(48, 106, 87);*/
     transition: fill 0.5s ease-out;
 }
 
@@ -551,11 +619,12 @@ header * {
     border: 0px;
     background: transparent;
 }
+.prev-button,
 .next-button:hover {
-    background-color: rgb(51, 190, 144);
+    background-color: transparent;
 }
 
-
+/***********************************************slider**************************************************************************/
 
 .main {
     display: flex;
@@ -690,11 +759,31 @@ header * {
     width: 100%;
     height: auto;                        /*auto*/
     max-width: 1250px;
-    margin: 460px auto 0px ;
+    margin: 660px auto 0px ;
+}
+@media (max-width: 1024px) {
+    .content-block__general-block {
+        margin: 500px auto 0px;
+    }
 }
 @media (max-width: 768px) {
     .content-block__general-block {
-        margin: 280px auto 0px;
+        margin: 300px auto 0px;
+    }
+}
+@media (max-width: 425px) {
+    .content-block__general-block {
+        margin: 160px auto 0px;
+    }
+}
+@media (max-width: 375px) {
+    .content-block__general-block {
+        margin: 140px auto 0px;
+    }
+}
+@media (max-width: 320px) {
+    .content-block__general-block {
+        margin: 120px auto 0px;
     }
 }
 
