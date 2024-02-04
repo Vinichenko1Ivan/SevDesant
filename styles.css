@@ -964,10 +964,10 @@ header * {
     }
 }
 
-.footer__list__logos img {
-    width: 45px;
-    height: 45px;
-}
+/*.footer__list__logos img {
+    width: 40px;
+    height: 40px;
+}*/
 /*@media (max-width: 1200px) {
     .footer__list__logos img {
         width: 75px;
@@ -980,6 +980,39 @@ header * {
         height: 50px;
     }
 }*/
+.footer__list__logos button {
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px 0px 0px;
+    border: 0px;
+    background-color: transparent;
+}
+/*@media (max-width: 1200px) {
+    .footer__list__logos button {
+        width: 75px;
+        height: 75px;
+    }
+}
+@media (max-width: 768px) {
+    .footer__list__logos button {
+        width: 50px;
+        height: 50px;
+    }
+}*/
+
+.ink-logo,
+.trud-logo,
+.gerb-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.airport-irk-logo,
+.istland-logo {
+    width: 50px;
+    height: 28px;
+}
+
 
 .ink:hover {
     background-color: #f0f0f0;
@@ -1012,27 +1045,13 @@ header * {
     }
 }
 
-.telegram-link {
-    padding: 10px 20px 20px;
+.mail {
+    width: 50px;
+    height: 50px;
 }
 
-.footer__list__logos button {
-    width: 100px;
-    height: 100px;
-    border: 0px;
-    background-color: transparent;
-}
-@media (max-width: 1200px) {
-    .footer__list__logos button {
-        width: 75px;
-        height: 75px;
-    }
-}
-@media (max-width: 768px) {
-    .footer__list__logos button {
-        width: 50px;
-        height: 50px;
-    }
+.telegram-link {
+    padding: 10px 20px 20px;
 }
 
 
